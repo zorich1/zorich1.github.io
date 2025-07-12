@@ -60,7 +60,7 @@
         var arr = search.split('=')
         var before = arr[1]
         var gap = now - before
-        if (gap > 16000) {
+        if (gap > 21000) {
           document.getElementById('text').innerText = '二维码过期，请重新扫码'
         } else {
           console.info('search: ', search, before, now)
@@ -70,7 +70,7 @@
         SetQrcode()
         setInterval(() => {
           SetQrcode()
-        }, 15000);
+        }, 20000);
       }
 </script>
 </html>
